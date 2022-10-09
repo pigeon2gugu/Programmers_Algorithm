@@ -13,11 +13,7 @@ def solution(genres, plays):
         genrePlaysMusic[genres[i]].append(i)
         genrePlaysMusicNum[genres[i]].append(plays[i])
 
-    maxgenre = max(genrePlays,key=genrePlays.get)
-    maxv = max(genrePlaysMusicNum[maxgenre])
-
     tt = 0
-    tlc = 0
     tl = len(genrePlays)
 
     while(answerCnt < tl*2):
